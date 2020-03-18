@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--écran en jeux-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--image du pays (vide initialement)-->
+
+    <!--texte view avec le score actuel-->
+
+    <!--Quatres bouton avec des noms de pays (tous doivent faire la meme taille)-->
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Affichage du score dans la liste view-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--image avec le chiffre du classement-->
+
+    <!--text avec le pseudo et le nombre de point-->
+
+</android.support.constraint.ConstraintLayout>
