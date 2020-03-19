@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!--Text view "Bonjour"-->
 
+    <TextView
+        android:id="@+id/text_debut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bonjour "
+        android:textSize="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:textColor="#A555FF"
+        />
+
+
     <!--Text view nom du joueur-->
+
+    <TextView
+        android:id="@+id/nom_joueur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom du joueur"
+        android:textSize="30dp"
+        android:layout_toRightOf="@id/text_debut"
+        android:layout_marginTop="200dp"
+        android:textColor="#A555FF"
+        />
+
+    <TextView
+        android:id="@+id/pret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Si vous etes pret, appuyer\n sur le bouton"
+        android:textSize="30dp"
+        android:layout_below="@id/text_debut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textColor="#A555FF"
+        />
 
     <!--Bouton "commencer-->
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="commencer"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:background="#A555FF"
+        />
+
+</RelativeLayout>

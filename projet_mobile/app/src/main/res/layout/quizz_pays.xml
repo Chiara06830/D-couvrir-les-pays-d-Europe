@@ -1,13 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--écran en jeux-->
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!--image du pays (vide initialement)-->
 
+    <ImageView
+        android:id="@+id/image_pays"
+        android:layout_width="350dp"
+        android:layout_height="375dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@drawable/image_17">
+
+    </ImageView>
+
     <!--texte view avec le score actuel-->
+
+    <TextView
+        android:id="@+id/score_joueur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_pays"
+        android:text="0"
+        android:textSize="60dp"
+        android:textColor="#A555FF"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
 
     <!--Quatres bouton avec des noms de pays (tous doivent faire la meme taille)-->
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/score_joueur"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#A5A5FF"
+     >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Option1"
+                android:textSize="25dp"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="20dp"
+                android:background="#A555FF"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Option2"
+                android:textSize="25dp"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="20dp"
+                android:background="#A555FF"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Option3"
+                android:textSize="25dp"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="20dp"
+                android:background="#A555FF"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Option4"
+                android:textSize="25dp"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="20dp"
+                android:background="#A555FF"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
