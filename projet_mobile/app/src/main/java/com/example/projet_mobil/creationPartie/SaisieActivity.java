@@ -22,19 +22,9 @@ public class SaisieActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saisie);
-    }
 
-   //lancer le quizz
-    public void debuterJeux(View v){
-        EditText joueur = (EditText) findViewById(R.id.pseudo_joueur);
-        String user = joueur.getText().toString();
-        Intent intent = new Intent(SaisieActivity.this, AfficheeActivity.class);
-        intent.putExtra("user", user);
-        startActivity(intent);
-    }
-
-    //retourner au menu principal
-    public void retour(View v){
-        finish();
+       if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().add(R.id.saisie, new SaisieFragment()).commit();
+        }
     }
 }

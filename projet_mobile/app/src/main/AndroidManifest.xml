@@ -19,7 +19,6 @@
         <activity android:name=".score.ScoreActivity"></activity>
         <activity android:name=".creationPartie.SaisieActivity"></activity>
         <activity android:name=".jeux.QuizzActivity"></activity>
-        <activity android:name=".creationPartie.AfficheeActivity"></activity>
         <activity android:name=".jeux.FinActivity"></activity>
     </application>
 
