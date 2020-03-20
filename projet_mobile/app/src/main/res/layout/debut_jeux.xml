@@ -35,14 +35,13 @@
         android:id="@+id/pret"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Si vous etes pret, appuyer\n sur le bouton"
-        android:textSize="30dp"
         android:layout_below="@id/text_debut"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Si vous etes prêt, appuyer\n sur le bouton"
         android:textColor="#A555FF"
-        />
+        android:textSize="30dp" />
 
     <!--Bouton "commencer-->
 

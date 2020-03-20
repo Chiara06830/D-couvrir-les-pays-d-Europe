@@ -4,10 +4,12 @@ package com.example.projet_mobil.jeux;
 Affichage du score nom et classement en fin de partie
 ---------------------------------------------------*/
 
+import android.support.v7.app.AppCompatActivity;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class FinActivity {
+public class FinActivity extends AppCompatActivity {
     public void writeJSON() {
         JSONObject object = new JSONObject();
         try {

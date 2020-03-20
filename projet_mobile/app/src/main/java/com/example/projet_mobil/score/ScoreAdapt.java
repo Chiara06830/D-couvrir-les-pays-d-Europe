@@ -55,7 +55,33 @@ public class ScoreAdapt extends BaseAdapter {
         pseudo.setTag(position);
         nbPoints.setTag(position);
 
+        pseudo.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Integer position = (Integer)v.getTag();
+                sendListener(list.get(position), position);
+            }
+
+        });
+
         //On retourne l'item créé.
         return layoutItem;
+    }
+
+    //abonnement pour click sur le nom...
+    private ArrayList<ScoreAdapterListener> mListListener = new ArrayList<ScoreAdapterListener>();
+    public void addListener(ScoreAdapterListener aListener) {
+        mListListener.add(aListener);
+    }
+    private void sendListener(Score item, int position) {
+        for(int i = mListListener.size()-1; i >= 0; i--) {
+            mListListener.get(i).onClickNom(item, position);
+        }
+    }
+
+    // Interface pour écouter les évènements sur le nom du Score
+    public interface ScoreAdapterListener {
+        public void onClickNom(Score item, int position);
     }
 }

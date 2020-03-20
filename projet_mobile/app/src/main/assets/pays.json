@@ -1,102 +1,102 @@
 [
   {
     "nom" : "Autriche",
-    "image" : "150px-EU-Austria.svg"
+    "image" : "austria"
   },
   {
     "nom" : "Bulgarie",
-    "image" : "150px-EU-Bulgaria.svg"
+    "image" : "bulgaria"
   },
   {
     "nom" : "Croatie",
-    "image" : "150px-EU-Croatia.svg"
+    "image" : "Croatia"
   },
   {
     "nom" : "Chypre",
-    "image" : "150px-EU-Cyprus.svg"
+    "image" : "Cyprus"
   },
   {
     "nom" : "Danemark",
-    "image" : "150px-EU-Denmark.svg"
+    "image" : "Denmark"
   },
   {
     "nom" : "Estonie",
-    "image" : "150px-EU-Estonia.svg"
+    "image" : "Estonia"
   },
   {
     "nom" : "Finlande",
-    "image" : "150px-EU-France.svg"
+    "image" : "France"
   },
   {
     "nom" : "Allemagne",
-    "image" : "150px-EU-Germany.svg"
+    "image" : "Germany"
   },
   {
     "nom" : "Grèce",
-    "image" : "150px-EU-Greece.svg"
+    "image" : "Greece"
   },
   {
     "nom" : "Hongrie",
-    "image" : "150px-EU-Hungary.svg"
+    "image" : "Hungary"
   },
   {
     "nom" : "Irelande",
-    "image" : "150px-EU-Ireland.svg"
+    "image" : "Ireland"
   },
   {
     "nom" : "Autriche",
-    "image" : "150px-EU-Austria.svg"
+    "image" : "Austria"
   },
   {
     "nom" : "Lituanie",
-    "image" : "150px-EU-Lituania.svg"
+    "image" : "Lituania"
   },
   {
     "nom" : "Pays bas",
-    "image" : "150px-EU-Netherlands.svg"
+    "image" : "Netherlands"
   },
   {
     "nom" : "Pologne",
-    "image" : "150px-EU-Poland.svg"
+    "image" : "Poland"
   },
   {
     "nom" : "Roumanie",
-    "image" : "150px-EU-Romania.svg"
+    "image" : "Romania"
   },
   {
     "nom" : "Slovenie",
-    "image" : "150px-EU-Slovenia.svg"
+    "image" : "Slovenia"
   },
   {
     "nom" : "Espagne",
-    "image" : "150px-EU-Spain.svg"
+    "image" : "Spain"
   },
   {
     "nom" : "Alabanie",
-    "image" : "150px-Europe-Albania.svg"
+    "image" : "Albania"
   },
   {
     "nom" : "Bosnie",
-    "image" : "150px-Europe-Bosnia_and_Herzegoniva.svg"
+    "image" : "Bosnia_and_Herzegoniva"
   },
   {
     "nom" : "Georgie",
-    "image" : "150px-Europe-Georgia.svg"
+    "image" : "Georgia"
   },
   {
     "nom" : "Iseland",
-    "image" : "150px-Europe-Iceland.svg"
+    "image" : "Iceland"
   },
   {
     "nom" : "Norvege",
-    "image" : "150px-Europe-Norway.svg"
+    "image" : "Norway"
   },
   {
     "nom" : "Royaume Unis",
-    "image" : "150px-Europe-UK.svg"
+    "image" : "UK"
   },
   {
     "nom" : "Alabanie",
-    "image" : "150px-Europe-Albania.svg"
+    "image" : "Albania"
   }
 ]

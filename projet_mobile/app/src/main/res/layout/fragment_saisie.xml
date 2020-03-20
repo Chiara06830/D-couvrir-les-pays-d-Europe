@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="60dp"
-        android:text="Insérer pseudo"
+        android:hint="Insérer pseudo"
         android:textSize="20dp"
 
         android:textColor="#A555FF"
@@ -20,19 +20,33 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="400dp"
 
         >
+
         <Button
+            android:id="@+id/button_retour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Valider"
-            android:textSize="25dp"
+            android:background="#A555FF"
             android:paddingHorizontal="30dp"
             android:paddingVertical="20dp"
+            android:text="Retour"
+            android:textSize="25dp"
+            android:onClick="retour"/>
+
+        <Button
+            android:id="@+id/button_valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:background="#A555FF"
-            />
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            android:text="Valider"
+            android:textSize="25dp"
+            android:onClick="debuterJeux"/>
 
     </LinearLayout>
 
