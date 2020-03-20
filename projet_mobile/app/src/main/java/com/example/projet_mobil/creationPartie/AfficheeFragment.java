@@ -30,7 +30,7 @@ public class AfficheeFragment extends Fragment {
         }
         //afficherTable(table);
         result=inflater.inflate(R.layout.fragment_debut, container, false);
-        tvNom = (ListView) result.findViewById(R.id.tvNom);
+        //tvNom = (ListView) result.findViewById(R.id.tvNom);
         tvNom.setText(nom);
 
         return result;

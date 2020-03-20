@@ -7,20 +7,15 @@
     tools:context=".MainActivity">
 
     <!--Image du logo qui sort de l'écran quand on clique dessus-->
-
-
     <ImageView
+        android:id="@+id/img_logo"
         android:layout_width="350dp"
         android:layout_height="375dp"
-        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:contentDescription="@drawable/image_17">
-
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:onClick="sortie">
     </ImageView>
-
-    <!--Bouton jouer qui fait le lien avec l'interface saisie_nom.xml-->
-
-    <!--Bouton Score qui affiche les score deja enregistrer-->
 
     <LinearLayout
         android:orientation="horizontal"
@@ -28,45 +23,29 @@
         android:layout_height="match_parent"
         android:layout_marginTop="550dp"
         android:gravity="center"
-        android:background="#A5A5FF"
+        android:background="#A5A5FF">
 
-
-        >
-
+        <!--Bouton jouer qui fait le lien avec l'interface saisie_nom.xml-->
         <Button
             android:id="@+id/button_jouer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jouer"
             android:textSize="25dp"
-
             android:paddingHorizontal="30dp"
             android:paddingVertical="20dp"
+            android:background="#A5A5FF" />
 
-            android:background="#A5A5FF"
-
-
-
-            />
+        <!--Bouton Score qui affiche les score deja enregistrer-->
         <Button
             android:id="@+id/button_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Score"
-            android:textSize="25dp"
-
-            android:paddingHorizontal="30dp"
-            android:paddingVertical="20dp"
             android:layout_marginLeft="40dp"
             android:background="#A5A5FF"
-
-            />
-
-
-
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            android:text="Score"
+            android:textSize="25dp" />
     </LinearLayout>
-
-
-
-
 </RelativeLayout>

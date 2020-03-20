@@ -10,9 +10,8 @@
         android:id="@+id/image_pays"
         android:layout_width="350dp"
         android:layout_height="375dp"
-        android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"
-        android:contentDescription="@drawable/image_17">
+        android:layout_marginTop="70dp">
 
     </ImageView>
 

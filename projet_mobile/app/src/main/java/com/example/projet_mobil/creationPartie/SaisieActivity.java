@@ -36,13 +36,13 @@ public class SaisieActivity extends AppCompatActivity implements SaisieFragment.
 
     @Override
     public void onButtonClicked(View view) {
-        etNom = (EditText)findViewById(R.id.etNom);
+        //etNom = (EditText)findViewById(R.id.etNom);
         String nom = etNom.getText().toString();
         //Check if detail fragment is not created
         if (debutJeux == null){
-            Intent intent = new Intent(SaisieFragment.this, AfficheeActivity.class);
-            intent.putExtra("valeur", nom);
-            startActivity(intent);
+            //Intent intent = new Intent(SaisieFragment.this, AfficheeActivity.class);
+            //intent.putExtra("valeur", nom);
+            //startActivity(intent);
         }
     }
 
