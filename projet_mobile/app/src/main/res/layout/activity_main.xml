@@ -29,9 +29,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="200dp"
             android:text="Jouer"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:onClick="jouer"/>
 
-        <!--Bouton Score qui affiche les score deja enregistrer-->
+    <!--Bouton Score qui affiche les score deja enregistrer-->
     <Button
         android:id="@+id/button_score"
         android:layout_width="wrap_content"
@@ -43,6 +44,7 @@
         android:paddingVertical="20dp"
         android:layout_marginTop="320dp"
         android:text="Score"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:onClick="afficherScore"/>
 
 </RelativeLayout>
