@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/image_pays"
-        android:layout_width="350dp"
-        android:layout_height="375dp"
+        android:layout_width="290dp"
+        android:layout_height="315dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp">
+        android:layout_marginTop="8dp">
 
     </ImageView>
 
@@ -45,26 +45,28 @@
             android:orientation="horizontal"
             android:gravity="center"
             >
+
             <Button
+                android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:background="#A555FF"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="20dp"
                 android:text="Option1"
-                android:textSize="25dp"
-                android:paddingHorizontal="30dp"
-                android:paddingVertical="20dp"
-                android:background="#A555FF"
-                />
+                android:textSize="25dp" />
+
             <Button
+                android:id="@+id/btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Option2"
-                android:textSize="25dp"
+                android:background="#A555FF"
                 android:paddingHorizontal="30dp"
                 android:paddingVertical="20dp"
-                android:background="#A555FF"
-                />
+                android:text="Option2"
+                android:textSize="25dp" />
 
         </LinearLayout>
 
@@ -75,26 +77,28 @@
             android:orientation="horizontal"
             android:gravity="center"
             >
+
             <Button
+                android:id="@+id/btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:background="#A555FF"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="20dp"
                 android:text="Option3"
-                android:textSize="25dp"
-                android:paddingHorizontal="30dp"
-                android:paddingVertical="20dp"
-                android:background="#A555FF"
-                />
+                android:textSize="25dp" />
+
             <Button
+                android:id="@+id/btn4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Option4"
-                android:textSize="25dp"
+                android:background="#A555FF"
                 android:paddingHorizontal="30dp"
                 android:paddingVertical="20dp"
-                android:background="#A555FF"
-                />
+                android:text="Option4"
+                android:textSize="25dp" />
 
         </LinearLayout>
 

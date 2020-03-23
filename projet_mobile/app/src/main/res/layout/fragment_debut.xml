@@ -46,15 +46,16 @@
 
     <!--Bouton "commencer-->
     <Button
+        android:id="@+id/btn_commencer_jeux"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
-        android:text="commencer"
         android:layout_centerHorizontal="true"
-        android:textSize="25dp"
+        android:layout_marginTop="210dp"
+        android:background="#A555FF"
         android:paddingHorizontal="30dp"
         android:paddingVertical="20dp"
-        android:background="#A555FF"
-        />
+        android:text="commencer"
+        android:textSize="25dp"
+        android:onClick="commencerJeux"/>
 
 </RelativeLayout>
