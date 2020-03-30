@@ -12,39 +12,51 @@
         android:layout_width="350dp"
         android:layout_height="375dp"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="130dp"
         android:clickable="true"
         android:onClick="sortie"
         app:srcCompat="@mipmap/ic_launcher"></ImageView>
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
         <!--Bouton jouer qui fait le lien avec l'interface saisie_nom.xml-->
+
+        <!--Bouton Score qui affiche les score deja enregistrer-->
         <Button
             android:id="@+id/button_jouer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#A5A5FF"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_buttons"
+            android:onClick="jouer"
+            android:layout_margin="20dp"
             android:paddingHorizontal="30dp"
             android:paddingVertical="20dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="200dp"
             android:text="Jouer"
-            android:textSize="25dp"
-            android:onClick="jouer"/>
+            android:textSize="25dp" />
 
-    <!--Bouton Score qui affiche les score deja enregistrer-->
-    <Button
+        <Button
         android:id="@+id/button_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="40dp"
-        android:background="#A5A5FF"
+        android:layout_margin="20dp"
+            android:background="@drawable/custom_buttons"
         android:paddingHorizontal="30dp"
         android:paddingVertical="20dp"
-        android:layout_marginTop="320dp"
+
         android:text="Score"
         android:textSize="25dp"
         android:onClick="afficherScore"/>
+    </LinearLayout>
+
+
 
 </RelativeLayout>
