@@ -48,7 +48,7 @@ public class ScoreAdapt extends BaseAdapter {
         TextView nbPoints = (TextView) layoutItem.findViewById(R.id.tv_nbPoints);
 
         //(3) : Renseignement des valeurs
-        classement.setImageResource(list.get(position).getClassement());
+        classement.setImageResource(list.get(position).getNbTour());
         pseudo.setText(list.get(position).getNom());
         nbPoints.setText(list.get(position).getNbPoints());
 
