@@ -1,7 +1,10 @@
 [
   {
-    "classment" : "austria",
-    "nom": "Chiara",
-    "nbPoints" : 10
+    "nom" : "Chiara",
+    "score" : 6
+  },
+  {
+    "nom" : "Pascal",
+    "score" : 9
   }
 ]

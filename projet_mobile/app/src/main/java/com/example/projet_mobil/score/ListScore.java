@@ -19,7 +19,6 @@ public class ListScore {
     public ListScore(){
         this.list = new ArrayList<Score>();
     }
-
     public int size(){return list.size();}
     public Score get(int pos){return this.list.get(pos);}
 
@@ -36,12 +35,10 @@ public class ListScore {
     }
 
     private Score getScoreFromJSONObject(JSONObject jsonObject, Context context) throws JSONException{
-        String classement = jsonObject.getString("classement");
-        int image = context.getResources().getIdentifier(classement, "mipmap", context.getPackageName());
         String nom = jsonObject.getString("nom");
-        int nbPoints = jsonObject.getInt("nbPoints");
+        int nbPoints = jsonObject.getInt("score");
 
-        Score score = new Score(image, nom, nbPoints);
+        Score score = new Score(0, nom, nbPoints);
 
         return score;
     }

@@ -1,12 +1,10 @@
 package com.example.projet_mobil.score;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -43,26 +41,22 @@ public class ScoreAdapt extends BaseAdapter {
         }
 
         //(2) : Récupération des TextView de notre layout
-        ImageView classement = (ImageView) layoutItem.findViewById(R.id.img_class);
         TextView pseudo = (TextView) layoutItem.findViewById(R.id.tv_pseudo);
         TextView nbPoints = (TextView) layoutItem.findViewById(R.id.tv_nbPoints);
 
-        //(3) : Renseignement des valeurs
-        classement.setImageResource(list.get(position).getNbTour());
+        //(3) : Renseignement des valeurs;
         pseudo.setText(list.get(position).getNom());
-        nbPoints.setText(list.get(position).getNbPoints());
+        nbPoints.setText(Integer.toString(list.get(position).getNbPoints()));
 
         pseudo.setTag(position);
         nbPoints.setTag(position);
 
         pseudo.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 Integer position = (Integer)v.getTag();
                 sendListener(list.get(position), position);
             }
-
         });
 
         //On retourne l'item créé.

@@ -11,7 +11,7 @@ import com.example.projet_mobil.R;
 /*-----------------------
 Gère l'affichage du score
  ----------------------*/
-public class ScoreActivity extends AppCompatActivity {
+public class ScoreActivity extends AppCompatActivity implements ScoreAdapt.ScoreAdapterListener{
     ListView lvScore;
     ListScore list = new ListScore();
 
@@ -32,6 +32,8 @@ public class ScoreActivity extends AppCompatActivity {
         //Initialisation de la liste avec les données
         lvScore.setAdapter(adapter);
 
+        //Ecoute des évènements sur la liste
+        adapter.addListener( this);
     }
 
     public void onClickNom(Score item, int position) {
