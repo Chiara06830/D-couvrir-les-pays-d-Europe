@@ -6,5 +6,9 @@
   {
     "nom" : "Pascal",
     "score" : 9
+  },
+  {
+    "nom" : "Eric",
+    "score" : 10
   }
 ]

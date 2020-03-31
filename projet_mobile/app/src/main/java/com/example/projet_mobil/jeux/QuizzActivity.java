@@ -95,7 +95,7 @@ public class QuizzActivity extends AppCompatActivity {
                 int nbTours = score.getNbTour() + 1;
                 score.setNbTour(nbTours);
                 //passage à la page suivante
-                if (score.getNbTour() < 2){
+                if (score.getNbTour() < 10){
                     Intent intent = new Intent(QuizzActivity.this, QuizzActivity.class);
                     intent.putExtra("score", score);
                     startActivity(intent);
@@ -116,7 +116,7 @@ public class QuizzActivity extends AppCompatActivity {
                     int nbTours = score.getNbTour() + 1;
                     score.setNbTour(nbTours);
                     //passage à la page suivante
-                    if (score.getNbTour() < 2){
+                    if (score.getNbTour() < 10){
                         Intent intent = new Intent(QuizzActivity.this, QuizzActivity.class);
                         intent.putExtra("score", score);
                         startActivity(intent);

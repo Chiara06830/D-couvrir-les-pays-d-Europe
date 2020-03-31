@@ -15,6 +15,8 @@ import com.example.projet_mobil.score.ScoreActivity;
 
 public class MainActivity extends AppCompatActivity {
     ImageView logo;
+    Button jouer;
+    Button score;
 
     Animation sortie;
 
@@ -22,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        score = (Button) findViewById(R.id.button_score);
+        jouer = (Button) findViewById(R.id.button_jouer);
     }
 
     //Fait sortir le logo de l'écran
@@ -30,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         sortie =  AnimationUtils.loadAnimation(MainActivity.this, R.anim.sortie);
         logo.setVisibility(View.VISIBLE);
         logo.startAnimation(sortie);
+        score.setVisibility(View.VISIBLE);
+        jouer.setVisibility(View.VISIBLE);
     }
 
     //fait passer a l'activité de saisie de nom du joueur

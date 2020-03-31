@@ -24,7 +24,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class FinActivity extends AppCompatActivity {
+public class FinActivity extends AppCompatActivity implements{
     TextView nom;
     TextView scoreFinal;
 
