@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commencer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -15,8 +16,21 @@
     <FrameLayout
         android:id="@+id/affichage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="200dp">
+
     </FrameLayout>
+
+    <!--Bouton "commencer-->
+    <Button
+        android:id="@+id/btn_commencer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="commencerJeux"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="30dp"
+        android:text="commencer"
+        android:textSize="25dp" />
 
 </LinearLayout>

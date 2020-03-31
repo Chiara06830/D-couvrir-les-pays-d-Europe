@@ -15,8 +15,6 @@ import com.example.projet_mobil.score.ScoreActivity;
 
 public class MainActivity extends AppCompatActivity {
     ImageView logo;
-    Button jouer;
-    Button score;
 
     Animation sortie;
 

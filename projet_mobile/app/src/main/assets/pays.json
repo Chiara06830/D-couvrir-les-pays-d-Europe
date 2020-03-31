@@ -9,39 +9,39 @@
   },
   {
     "nom" : "Croatie",
-    "image" : "Croatia"
+    "image" : "croatia"
   },
   {
     "nom" : "Chypre",
-    "image" : "Cyprus"
+    "image" : "cyprus"
   },
   {
     "nom" : "Danemark",
-    "image" : "Denmark"
+    "image" : "denmark"
   },
   {
     "nom" : "Estonie",
-    "image" : "Estonia"
+    "image" : "estonia"
   },
   {
     "nom" : "Finlande",
-    "image" : "France"
+    "image" : "france"
   },
   {
     "nom" : "Allemagne",
-    "image" : "Germany"
+    "image" : "germany"
   },
   {
     "nom" : "Grèce",
-    "image" : "Greece"
+    "image" : "greece"
   },
   {
     "nom" : "Hongrie",
-    "image" : "Hungary"
+    "image" : "hungary"
   },
   {
     "nom" : "Irelande",
-    "image" : "Ireland"
+    "image" : "ireland"
   },
   {
     "nom" : "Autriche",
@@ -49,43 +49,43 @@
   },
   {
     "nom" : "Lituanie",
-    "image" : "Lituania"
+    "image" : "lituania"
   },
   {
     "nom" : "Pays bas",
-    "image" : "Netherlands"
+    "image" : "netherlands"
   },
   {
     "nom" : "Pologne",
-    "image" : "Poland"
+    "image" : "poland"
   },
   {
     "nom" : "Roumanie",
-    "image" : "Romania"
+    "image" : "romania"
   },
   {
     "nom" : "Slovenie",
-    "image" : "Slovenia"
+    "image" : "slovenia"
   },
   {
     "nom" : "Espagne",
-    "image" : "Spain"
+    "image" : "spain"
   },
   {
     "nom" : "Alabanie",
-    "image" : "Albania"
+    "image" : "albania"
   },
   {
     "nom" : "Bosnie",
-    "image" : "Bosnia_and_Herzegoniva"
+    "image" : "bosnia_and_herzegoniva"
   },
   {
     "nom" : "Georgie",
-    "image" : "Georgia"
+    "image" : "georgia"
   },
   {
     "nom" : "Iseland",
-    "image" : "Iceland"
+    "image" : "iceland"
   },
   {
     "nom" : "Norvege",
@@ -93,10 +93,6 @@
   },
   {
     "nom" : "Royaume Unis",
-    "image" : "UK"
-  },
-  {
-    "nom" : "Alabanie",
-    "image" : "Albania"
+    "image" : "uk"
   }
 ]

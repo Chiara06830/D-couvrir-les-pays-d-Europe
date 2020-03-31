@@ -1,19 +1,20 @@
 package com.example.projet_mobil.creationPartie;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.projet_mobil.R;
+import com.example.projet_mobil.jeux.QuizzActivity;
+import com.example.projet_mobil.score.Score;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 
 /*-----------------------------------------------
 Créer le fragement qui affichera le DebutActivity
@@ -46,6 +47,4 @@ public class AfficheeFragment extends Fragment {
 
         return rootView;
     }
-
-
 }

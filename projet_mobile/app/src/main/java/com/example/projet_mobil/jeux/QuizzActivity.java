@@ -29,7 +29,7 @@ import java.util.Random;
 public class QuizzActivity extends AppCompatActivity {
     private String TAG = QuizzActivity.class.getSimpleName();
     private ProgressDialog pDialog;
-    private static String url = "";
+    private static String url = "https://www.junkjumper-projects.com/iut/pays.json";
 
     ImageView pays;
     TextView scoreActuelle;
@@ -47,8 +47,9 @@ public class QuizzActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quizz_pays);
 
-        score  = getIntent().getExtras().getParcelable("score");
+        //score  = getIntent().getExtras().getParcelable("score");
         context = this.getApplicationContext();
+        paysList = new ArrayList<Pays>();
 
         pays = (ImageView) findViewById(R.id.image_pays);
         scoreActuelle = (TextView) findViewById(R.id.score_joueur);
@@ -56,9 +57,11 @@ public class QuizzActivity extends AppCompatActivity {
         btn2 = (Button) findViewById(R.id.btn2);
         btn3 = (Button) findViewById(R.id.btn3);
         btn4 = (Button) findViewById(R.id.btn4);
+
+        new GetPays().execute();
     }
 
-    private class GetStations extends AsyncTask<Void, Void, Void> {
+    private class GetPays extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected void onPreExecute() {
@@ -77,18 +80,17 @@ public class QuizzActivity extends AppCompatActivity {
 
             if (jsonStr != null) {
                 try {
-                    JSONObject jsonObj = new JSONObject(jsonStr);
-                    JSONArray pays = jsonObj.getJSONArray("docs");
+                    JSONArray jsonarray = new JSONArray(jsonStr);
 
-                    for (int i = 0; i < pays.length(); i++) {
-                        JSONObject c = pays.getJSONObject(i);
+                    for (int i = 0; i < jsonarray.length(); i++) {
+                        JSONObject c = jsonarray.getJSONObject(i);
 
                         String nom = c.getString("nom");
                         String simage = c.getString("image");
                         int image = context.getResources().getIdentifier(simage, "mipmap", context.getPackageName());
 
-
                         Pays p = new Pays(image, nom);
+                        System.out.println(p);
                         paysList.add(p);
                     }
 
@@ -110,11 +112,13 @@ public class QuizzActivity extends AppCompatActivity {
             if (pDialog.isShowing())
                 pDialog.dismiss();
 
+            //remplir une liste avec tout les noms de pays
             ArrayList<String> listNom = new ArrayList<String>();
             for(int i=0;i<paysList.size();i++){
                 listNom.add(paysList.get(i).getNom());
             }
 
+            //remplir une liste avec les boutons pour les melanger plus tard
             ArrayList<Button> listButton = new ArrayList<Button>();
             listButton.add(btn1);
             listButton.add(btn2);
@@ -123,13 +127,14 @@ public class QuizzActivity extends AppCompatActivity {
 
             //récupere un pays aléatoire
             Random randPays = new Random();
-            int rPays = randPays.nextInt(paysList.size() - 0 + 1) + 0;
+            int rPays = randPays.nextInt(paysList.size());
             Pays selected = paysList.get(rPays);
+            System.out.println(selected);
             pays.setImageResource(selected.getImage());
 
             //prendre un bouton aléatoirement pour lui donner la bonne réponse
             Random randBouton = new Random();
-            int rBouton = randBouton.nextInt(listButton.size() - 0 + 1) + 0;
+            int rBouton = randBouton.nextInt(listButton.size());
             Button reponse = listButton.get(rBouton);
             reponse.setText(selected.getNom());
 
@@ -137,11 +142,10 @@ public class QuizzActivity extends AppCompatActivity {
             listButton.remove(reponse);
             for (int i=0; i<listButton.size(); i++){
                 Random rand2 = new Random();
-                int r2 = rand2.nextInt(listButton.size() - 0 + 1) + 0;
+                int r2 = rand2.nextInt(listButton.size());
                 listButton.get(i).setText(listNom.get(r2));
                 listNom.remove(r2);
             }
         }
-
     }
 }
